@@ -16,4 +16,9 @@ public class Car {
 		System.out.println("You pushed the breaks");
 	}
 	
+	// Lesson 30 - toString method
+	public String toString() {
+		return make + "\n" + model + "\n" + color + "\n" + year;
+	}
+	
 }
