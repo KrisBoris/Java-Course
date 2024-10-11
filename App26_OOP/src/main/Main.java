@@ -1,5 +1,6 @@
 package main;
 
+import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -272,8 +273,33 @@ public class Main {
 		
 		System.out.println("\nLesson 44 - Exceptions");
 		
-		Scanner scanner = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);		
 		
+		try {
+			
+			System.out.println("Enter first value");
+			int a = scanner.nextInt();
+			
+			System.out.println("Enter second value");
+			int b = scanner.nextInt();
+			
+			double c = (double) a / b;
+			
+			System.out.println("Result: " + c);
+			
+		} 
+		catch (ArithmeticException e) {
+			System.out.println("You can't divide by zero");			
+		}
+		catch (InputMismatchException e) {
+			System.out.println("Incorrect input type");
+		}
+		catch (Exception e) {
+			System.out.println("Unexpected error occured");
+		}
+		finally {
+			scanner.close();
+		}
 		
 	}
 }
