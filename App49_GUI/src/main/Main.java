@@ -286,6 +286,30 @@ public class Main {
 				JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE, 
 				icon, responses, 0);
 		System.out.println("Respose was: " + responses[response]);
+		
+		
+		/*
+		 * Lesson 59 - Textfield
+		 * Textfield - GUI component that can by used to add, set or get text
+		 */
+		
+		new TextFrame();
+		
+		
+		/*
+		 * Lesson 60 - JCheckBox
+		 * JCheckBox - a GUI component that can be selected or unselected 
+		 */
+		
+		new CheckBoxFrame();		
+		
+		
+		/*
+		 * Lesson 61 - JRadioButton
+		 * JRadioButton - One or more buttons in grouping in which only one may be selected per group
+		 */
+		
+		new RadioButtonsFrame();
+		
 	}
-
 }
