@@ -40,6 +40,34 @@ public class Main {
 		
 		new MouseListenerFrame();
 		
+		
+		/*
+		 * Lesson 70 - Drag and drop
+		 */
+	
+		new DragDropFrame();
+		
+		
+		/*
+		 * Lesson 71 - Key bindings
+		 */
+		
+		new KeyBindingsFrame();
+		
+		
+		/*
+		 * Lesson 72 - 2D Graphics
+		 */
+		
+		new Graphics2DFrame();
+		
+		
+		/*
+		 * Lesson 73 - 2D Animation
+		 */
+		
+		new AnimationFrame();
+		
 	}
 
 }
